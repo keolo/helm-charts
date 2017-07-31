@@ -2,7 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: {{ .Release.Name }}
-  labels:
   # https://github.com/kubernetes/helm/blob/df92425fa9d06f1233876871e96e4d82c194215b/docs/chart_best_practices/labels.md#labels-and-annotations
   labels:
     app: {{ template "name" . }}
